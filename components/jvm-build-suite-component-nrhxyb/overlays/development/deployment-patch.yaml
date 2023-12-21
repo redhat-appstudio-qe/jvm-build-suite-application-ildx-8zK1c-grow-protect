@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jvm-build-suite-component-nrhxyb
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/jvm-build-dotm-tenant/jvm-build-suite-application-ildx/jvm-build-suite-component-nrhxyb@sha256:2a36b2629223c799bda78dbcca2e722eec66d18b9ccc9bd0d751179e3434fc87
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
